@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "blogs.html" as blogs %}
+
+{% block content %}
+{% set blog = get_section(path="blog/_index.md") %}
+  <ul>
+    {% for page in blog.pages %}
+      <li>
+        <a class="title" href="{{ page.permalink }}"><time datetime="{{ page.date }}">{{ page.date }}</time> {{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "blogs.html" as blogs %}
+
+{% block title %}
+    <title>Exsample Zola Blog</title>
+    <meta name="description" content="TExsample Zola Blog">
+{% endblock title %}
+
+{% block content %}
+    {% for page in paginator.pages %}
+        {{ blogs::article(page=page) }}
+    {% endfor %}
+{% endblock content %}
