@@ -1,8 +1,10 @@
 {% macro article(page) %}
-  <article>
-    <a class="title" href="{{ page.permalink }}">{{ page.title }}</a>
-    <time datetime="{{ page.date }}">{{ page.date }}</time>
+  <article class="article">
+    <div class="article-block">
+      <a class="title" href="{{ page.permalink }}">{{ page.title }}</a>
+      <p class="date">{{ page.date }}</p>
+    </div>
     <p>{{ page.summary | striptags }}</p>
-    <a href="{{ page.permalink }}">» 続きを読む</a>
+    <a class="more" href="{{ page.permalink }}">続きを読む</a>
   </article>
 {% endmacro article %}

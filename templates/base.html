@@ -9,19 +9,17 @@
     {% block metadata %} {% endblock %}
   </head>
 <body>
-  <header>
-    <h1 id="title">
+  <header class="header">
+    <h1>
       <a href="/">Exsample Zola Blog</a>
     </h1>
-    <nav>
-      <a href="/list">ブログリスト</a>
+    <nav class="nav">
+      <a href="/list">List</a>
+      <a href="/about">About</a>
     </nav>
   </header>
-  <main>
+  <main class="main">
     {% block content %} {% endblock %}
   </main>
-  <footer>
-    <p>Ryo Katsuse</p>
-  </footer>
 </body>
 </html>

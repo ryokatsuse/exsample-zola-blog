@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+}
+
+.header,
+.main{
+  display: block;
+  max-width: calc(600px + 10%);
+  margin: 0 auto 2.8rem;
+}
+
+.header {
+  h1 {
+    font-weight: normal;
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+}
+
+.article {
+  margin-bottom: 2rem;
+
+  &-block {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .date {
+    margin-left: 2rem;
+  }
+
+  .more {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.nav {
+  a {
+    color: black;
+    font-size: .9rem;
+    margin-right: 1.6rem;
+  }
+}
+
+.list {
+  margin-bottom: 2rem;
+}
+
+pre {
+  padding: 1rem;
+}
